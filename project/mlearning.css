@@ -40,7 +40,7 @@
 
 body{
 	background-image: url(Maudylatar.jpg);
-	background-size: auto;
+	background-size: 100%;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 /*	background-color: rgba(255,255,255,0.3);*/
 }
@@ -64,19 +64,23 @@ body{
 }
 
 .isian_login input{
-	width: 250px;
-	height: 30px;
-	border-radius: 10px;
-	border-top: white;
-	border-left: white;
+	width: 100%;
+	padding: 10px;
+	font-size: 11pt;
+    border-radius: 10px;
+
 }
 
 .Masuk input{
 	background-color: #234363;
 	color: white;
+	font-size: 12pt;
+	width: 100%;
+	border: none;
 	border-radius: 10px;
-	width: 100px;
-	height: 30px
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .akun{
