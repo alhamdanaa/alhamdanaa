@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;  
+}
+
+.navbar{
+    margin-top: 0px; /*menyesuaikan margin atas*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*tipe font*/
+    width: 100%; /*lebar*/
+    font-size: 15px; /*ukuran tulisan*/ 
+}
+
+.navbar ul{
+    background: #234363; /*agar hanya sekitaran yg kena*/
+    list-style: none;
+    display: inline-table;
+    width: 100%;
+    padding: 0 5px;
+}
+
+.navbar ul li{
+    float: right;
+}
+
+.navbar ul li:hover{
+    background: #3dbf8d;
+    
+}
+
+.navbar ul li:hover a{
+    color: snow;
+}
+
+.navbar ul li a{
+    display: block;
+    padding: 13px;
+    color: white;
+    text-decoration: none; /*hapus underline nav*/
+}
+
+body{
+	background-image: url(Maudylatar.jpg);
+	background-size: auto;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/*	background-color: rgba(255,255,255,0.3);*/
+}
+
+.smbt_masuk{
+	float: left;
+	color: white;
+	object-position: relative;
+	font-size: 40px;
+	padding: 130px;
+}
+
+.Kotak_Login{
+	float: right;
+	height: 400px;
+	width: 250px;
+	background: lightblue;
+	border-radius: 5%;
+	margin: 10px ;
+	padding: 40px 40px;
+}
+
+.isian_login input{
+	width: 250px;
+	height: 30px;
+	border-radius: 10px;
+	border-top: white;
+	border-left: white;
+}
+
+.Masuk input{
+	background-color: #234363;
+	color: white;
+	border-radius: 10px;
+	width: 100px;
+	height: 30px
+}
+
+.akun{
+	margin: 0;
+	padding: 0;
+	background-color: lightblue;
+	color: white;
+	height: 35px;
+}
+
+.form_akun{
+	background-color: white;
+	padding: 35px;
+	height: 540px;
+}
