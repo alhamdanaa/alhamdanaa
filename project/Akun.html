@@ -20,29 +20,52 @@
 		<p align="left"><font size="4"><b> Akun </b></font></p>
 	</div>
 	
-	<div class="form_akun">
+
+	<div class="man">
 		<center>
-			<form>		
-				<img src="akun.png" width="30" height="30"><br>
-				<label>Akun Siswa</label> <br><br>
-				<label>Nama: </label>
-				<input type="text" name="Nama Belakang" placeholder="Nama Sesuai Ijazah"><br><br>
-				<label>Tempat:</label>
-				<input type="text" name="tempatlhr" placeholder="Tempat Lahir">
-				<label>Tanggal Lahir:</label>
-				<input type="date" name="tglLahir" value="tglLahir"><br><br>
-				<input type="radio" name="jkelamin" value="Laki-laki"> Laki Laki
-				<input type="radio" name="jkelamin" value="Perempuan"> Perempuan<br><br>
-				Alamat: <input type="text" name="alamat" placeholder="Masukkan Alamat">
-				Kode Pos: <input type="number" name="kodepos" placeholder="Kode Pos"><br><br>
-				Nomor Telepon: <input type="number" name="notelepon" placeholder="Nomor Telepon"><br><br>
-				Alamat Email: <input type="email" name="Email" placeholder="Alamat Email"><br><br>
-				Username: <input type="text" name="Username" placeholder="Username"><br><br>
-				Password: <input type="Password" name="Password" placeholder="Password"><br><br>
-				<input style="width: 100px; height: 30px; background-color: #34da1a;" type="button" name="simpan" value="SIMPAN">
-				<input style="width: 100px; height: 30px; background-color: red;" type="button" name="batal" value="BATAL">
-			</form>
+			<img src="man.png"> <br>
+			<label style="color: rgb(39, 128, 158);"> Ganti Foto Profil </label>
 		</center>
+	</div>
+
+	<div class="form_akun">
+			<form>		
+				<label id="namadepan">Nama Depan </label>
+					&emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+				<label id="namabelakang">Nama Belakang </label> <br>
+				<input type="text" name="namadepan">
+						&emsp; &emsp; &emsp; &ensp;
+				<input type="text" name="namabelakang"> <br> <br>
+				<label>Tempat Lahir</label>
+					&emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+				<label>Tanggal Lahir</label> <br>
+				<input type="text" name="tempatlhr">
+						&emsp; &emsp; &emsp; &ensp;
+				<input type="date" name="tglLahir"><br><br>
+				<label> Alamat </label>
+					&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &ensp; &ensp; &ensp; &ThinSpace;		
+				<label> Kode Pos </label> <br>
+				<input type="text" name="alamat">
+						&emsp; &emsp; &emsp; &ensp;
+				<input type="number" name="kodepos"><br><br>
+				<label>Nomor Telepon </label> <br>
+				<input type="number" name="notelepon"><br><br>
+				<label>Alamat Email </label> <br>
+				<input type="email" name="Email"><br><br>
+				<label>Username </label> <br>
+				<input type="text" name="Username" ><br><br>
+				<label>Password </label> <br>
+				<input type="Password" name="Password"><br><br>				
+				
+				<div class="simpanakun">
+					<input type="button" name="batal" value="BATAL">
+				</div>
+				
+				<div class="batalakun">
+					<input type="button" name="simpan" value="SIMPAN">
+				</div>		
+				
+		</form>
 	</div>
 
 </body>

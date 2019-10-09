@@ -92,7 +92,47 @@ body{
 }
 
 .form_akun{
-	background-color: white;
+	float: right;
+	background-color: whitesmoke;
 	padding: 35px;
-	height: 540px;
+	padding-top: 5px;
+	width: 970px;
+	height: 490px;
+}
+
+.form_akun input{
+	border-radius: 10px;
+	border-color: whitesmoke;
+	width: 140px;
+	height: 20px;
+}
+
+.man{
+	background-color: whitesmoke;
+    height:530px;
+    width: 340px;
+	float: left;
+	position: absolute;
+}
+
+.man img{
+	height: 150px;
+	width: 150px;
+	padding: 15px;
+}
+
+.simpanakun input{
+	float: right;
+	color: white; 
+	background-color: rgb(212, 55, 55); 
+	border-radius: 10px; 
+	width: 100px; height: 30px;
+}
+
+.batalakun input{
+	float: right;
+	color: white; 
+	background-color: rgb(82, 163, 190);
+	border-radius: 10px; 
+	width: 100px; height: 30px;
 }
