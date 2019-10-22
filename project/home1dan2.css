@@ -53,14 +53,11 @@ body{
 #kotaktengah{
     background-color: white;
     height:560px;
-    width: 610px;
+    width: 975px;
     margin: 10px 0px;
     float: left;
     text-align: left;
-    outline-width: 2px;
-    outline-color: #78BDC4;
-    outline-style: solid;
-    
+    border-block: 20%;
 }
 #kelas{
     position: absolute;
@@ -68,13 +65,13 @@ body{
     height:450px;
     width: 350px;
     margin: 120px 10px;
+    
 }
 #kotakakun{
     background-color: white;
     height:100px;
     width: 350px;
     margin: 10px 10px;
-
 }
 .profil{
     position: absolute;
@@ -87,21 +84,11 @@ img{
     width: 60px;
     height: 60px;
 }
-jenis{
-    position: absolute;
-    left: 435px;
-    top: 145px
+judul{
+    position: relative;
+    bottom: 40px;
 }
-#kotakkanan{
-    position: absolute;
-    background-color: white;
-    height:560px;
-    width: 350px;
-    margin: 57px 0px;
-    float: right;
-    top: 0;
-    right: 10px;
-}
+
 .box{
     height:auto;
     width: auto;
@@ -111,13 +98,13 @@ jenis{
     font-size: 16pt;
 }
 .isi{
-    padding: 10px 0 0 20px;
+    padding: 10px 10px 0 20px;
     float: left;
 }
 judul{
     float: right;
     position: relative;
-    left: 20px;
+    right: 626px;
     top: 10px;
 }
 nama{
@@ -125,15 +112,32 @@ nama{
     top: 30px;
     left: 110px;
 }
+judul2{
+    float: right;
+    position: absolute;
+    right: 760px;
+    top: 175px;
+}
+.mulai input{
+    font-size: 13pt;
+    position: relative;
+    color: white;
+    background-color: #78BDC4;
+    border-radius: 10px;
+    width: 165px;
+    height: 35px;
+    top: 300px;
+    left: 100px;
+}
 .button{
     height: 10px;
     width: 10px;
+}
+abu{
+    color:#9e9a9aff;
 }
 .logo{
     height: 39px;
     width: 160px;
     padding: 3px 0 3px 10px;
-}
-abu{
-    color:#9e9a9aff;
 }

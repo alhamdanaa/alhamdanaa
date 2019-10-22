@@ -6,12 +6,19 @@
 	</style>
 </head>
 <body>
+
 	<div class="navbar">
 		<ul>
-			<li><a href="AKUN"> AKUN </a></li>
-			<li><a href="TENTANG"> TENTANG </a></li>
-			<li><a href="PANDUAN"> PANDUAN </a></li>
-			<li><a href="HOME"> HOME </a></li>
+				<div class="dropakun">
+					<li>
+						<a type="button" href=" /C:/Users/INUN/Documents/Bluetooth/index.html."> AKUN </a>
+					</li>
+				</div>
+
+			<li><a href="tentang.html"> TENTANG </a></li>
+			<li><a href="panduan.html"> PANDUAN </a></li>
+			<li><a href="home.html"> HOME </a></li>
+			<img src="icon/logo.png" class="logo">
 		</ul>
 	</div>
 	<div style="background-color: black; opacity: 0.4;"></div>
@@ -20,10 +27,10 @@
 		<p align="left"><font size="4"><b> Akun </b></font></p>
 	</div>
 	
-
+	<div class="body">
 	<div class="man">
 		<center>
-			<img src="man.png"> <br>
+			<img src="icon/man.png"> <br>
 			<label style="color: rgb(39, 128, 158);"> Ganti Foto Profil </label>
 		</center>
 	</div>
@@ -31,19 +38,19 @@
 	<div class="form_akun">
 			<form>		
 				<label id="namadepan">Nama Depan </label>
-					&emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+					&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &ensp; &ensp;
 				<label id="namabelakang">Nama Belakang </label> <br>
 				<input type="text" name="namadepan">
 						&emsp; &emsp; &emsp; &ensp;
 				<input type="text" name="namabelakang"> <br> <br>
 				<label>Tempat Lahir</label>
-					&emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+					&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &ensp; &ensp;
 				<label>Tanggal Lahir</label> <br>
 				<input type="text" name="tempatlhr">
 						&emsp; &emsp; &emsp; &ensp;
 				<input type="date" name="tglLahir"><br><br>
 				<label> Alamat </label>
-					&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &ensp; &ensp; &ensp; &ThinSpace;		
+					&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &ensp; &ensp;
 				<label> Kode Pos </label> <br>
 				<input type="text" name="alamat">
 						&emsp; &emsp; &emsp; &ensp;
@@ -56,17 +63,27 @@
 				<input type="text" name="Username" ><br><br>
 				<label>Password </label> <br>
 				<input type="Password" name="Password"><br><br>				
-				
+								
 				<div class="simpanakun">
-					<input type="button" name="batal" value="BATAL">
-				</div>
-				
-				<div class="batalakun">
-					<input type="button" name="simpan" value="SIMPAN">
+					<input onclick="simpan_akun()" type="button" name="simpan" value="SIMPAN">
 				</div>		
 				
 		</form>
 	</div>
+	</div>
+
+	<script>
+		function simpan_akun() {
+			if(window.confirm("Simpan Perubahan Akun??"))
+			{
+			window.alert("Perubahan Disimpan!");
+			}
+			else
+			{
+			window.alert("Batal Menyimpan!");
+			}
+			}; 
+	</script>
 
 </body>
 </html>
