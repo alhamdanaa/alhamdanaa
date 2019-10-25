@@ -2,12 +2,6 @@
 <html>
 <head>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <script>
-        window.alert("Quis Dimulai");
-    </script>
-
 	<link rel="stylesheet" type="text/css" href="soal.css">
 	<title> E-Learning SMPN 1 Rambipuji/Soal </title>
 </head>
@@ -107,9 +101,9 @@
 		Ulangan Harian 2
     </div>
     <div class="isi">
-        <soalno>
+        <label>
             Soal 1
-        </soalno> <br><br>
+        </label> <br><br>
         Perhatikan ciri-ciri makhluk hidup berikut ini ! <br>
         1. Eukariot <br>
         2. Heterotrof <br>
@@ -127,8 +121,10 @@
         </div>
         <div class="selanjutnya">
            <a href="soal2.html"> <input type="button" name="selanjutnya" value="Selanjutnya"> </a>
-        </div>            
-    </div>
+        </div>
+    
+            
+        </div>
 </div>
 
 <script>
@@ -139,23 +135,7 @@
 			}
 			}; 
 </script>
-
     
-    <script>
-        var myTimer;
-        function clock() {
-                myTimer = setInterval(myClock, 1000);
-                var c = 5;
-        
-                function myClock() {
-                    document.getElementById("demo").innerHTML = --c;
-                        if (c == 0) {
-                            clearInterval(myTimer);
-                    }
-                }
-            }
-     </script>
-
     <script>
         // Set the date we're counting down to
         var countDownDate = new Date("Oct 25, 2019 15:37:25").getTime();
@@ -163,29 +143,29 @@
         // Update the count down every 1 second
         var x = setInterval(function() {
         
-          // Get today's date and time
-          var now = new Date().getTime();
+            // Get today's date and time
+            var now = new Date().getTime();
             
-          // Find the distance between now and the count down date
-          var distance = countDownDate - now;
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
             
-          // Time calculations for days, hours, minutes and seconds
-          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
             
-          // Output the result in an element with id="demo"
-          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-          + minutes + "m " + seconds + "s ";
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
             
-          // If the count down is over, write some text 
-          if (distance < 0) {
+            // If the count down is over, write some text 
+            if (distance < 0) {
             clearInterval(x);
             document.getElementById("demo").innerHTML = "EXPIRED";
-          }
+            }
         }, 1000);
-    </script>
+    </script>    
 
 </body>
 </html>

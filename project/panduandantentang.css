@@ -37,10 +37,9 @@
     text-decoration: none; /*hapus underline nav*/
 }
 body{
-	background-image: url(Maudylatar.jpg);
     background-size: 100%;
     font-family: 'Segoe UI';
-/*	background-color: rgba(255,255,255,0.3);*/
+	background-color: rgba(255,255,255,0.3);
 }
 #kotaktengah{
     background-color: white;
@@ -71,3 +70,62 @@ p{
     width: 160px;
     padding: 3px 0 3px 10px;
 }
+input{
+	font-size: 12pt;
+	border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+form {
+    color: #234363;
+    justify-content: center;
+    align-items: center;
+}
+#border{
+    
+    width: 40%;
+    height: 0px;;
+    border-style: inset;
+}
+.pilihan{
+    width: 20px;
+    height: 20px;
+}
+.tombol{
+    background-color: #234363;
+	color: white;
+	font-size: 12pt;
+	width: 10%;
+	border: none;
+	border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    float: right;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {background-color: #3dbf8d}
+  
+.navkun:hover .dropdown-content {
+    display: block;
+    position: absolute;
+    right: 0%;
+}
+  

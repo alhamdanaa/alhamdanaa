@@ -6,16 +6,23 @@
 </head>
 <body>
 
-	<div class="navbar">
-		<ul>
-			<li><a href="Akun.html"> AKUN </a></li>
-			<li><a href="tentang.html"> TENTANG </a></li>
-			<li><a href="panduan.html"> PANDUAN </a></li>
-			<li><a href="soal.html"> HOME </a></li>
-			<img src="icon/logo.png" class="logo">
-		</ul>
-	</div>	
-
+		<div class="navbar">
+				<ul>
+					<div class="navkun">
+						<li><a href="#"> AKUN </a></li>
+							<div class="dropdown-content">
+								<a href="Akun.html">Info Akun</a>
+								<a href="#">Pengaturan</a>
+								<a href="/C:/Users/INUN/Documents/Visual Code/Projek/index.html.">Keluar</a>
+							</div>                                      
+					</div>
+					<li><a href="tentang.html"> TENTANG </a></li>
+					<li><a href="panduan.html"> PANDUAN </a></li>
+					<li><a href="home.html"> HOME </a></li>
+					<img src="icon/logo.png" class="logo">
+				</ul>
+			</div>	
+		
 <div id="kotakakun">
     <img  class="profil" src="icon/man.png">
     <nama> Nama Siswa <br>
@@ -42,14 +49,15 @@
             <input onclick="konfirm()" type="button" name="Mulai" value="Mulai Mengerjakan">
         </div>
 </div>
+
 <div id="kelas">
     <div class="box">
 		KELASKU
 	</div>
-	<div class="isi">
-		<img src="icon/bullet.png" class="button"> Biologi MIPA1 <br>
-        <img src="icon/bullet.png" class="button"> Matematika MIPA1 <br>
-        <img src="icon/bullet.png" class="button"> Bahasa Indonesia MIPA1 <br>
+    <div class="isi">
+        <img src="icon/bullet.png" class="button"> <a href="#"> Biologi MIPA1 </a> <br>
+        <img src="icon/bullet.png" class="button"> <a href="#"> Matematika MIPA1 </a> <br>
+        <img src="icon/bullet.png" class="button"> <a href="#"> Bahasa Indonesia MIPA1 </a> <br>
 	</div>
 </div>
 
@@ -57,11 +65,7 @@
 	function konfirm() {
 			if(window.confirm("Mulai Kerjakan Quis??"))
 			{
-			window.alert("Quis Dimulai!");
-			}
-			else
-			{
-			window.alert("Quis Ditunda!");
+			window.location.replace("soal.html");
 			}
 			}; 
 </script>

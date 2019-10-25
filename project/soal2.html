@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" type="text/css" href="soal.css">
+	<title> E-Learning SMPN 1 Rambipuji/Soal </title>
+</head>
+<body>
+
+        <div class="navbar">
+                <ul>
+                    <div class="navkun">
+                        <li><a href="#"> AKUN </a></li>
+                            <div class="dropdown-content">
+                                <a href="Akun.html">Info Akun</a>
+                                <a href="#">Pengaturan</a>
+                                <a href="/C:/Users/INUN/Documents/Visual Code/Projek/index.html.">Keluar</a>
+                            </div>                                      
+                    </div>
+                    <li><a href="tentang.html"> TENTANG </a></li>
+                    <li><a href="panduan.html"> PANDUAN </a></li>
+                    <li><a href="home.html"> HOME </a></li>
+                    <img src="icon/logo.png" class="logo">
+                </ul>
+            </div>	
+        
+<div id="kotakakun">
+    <div class="box">
+        Detail
+    </div>
+    <div class="detail">
+    <label id="demo"> Waktu Tersisa :  </label> <br>
+    </div>
+    <div class="kotak">
+        1
+    </div>
+    <div class="kotak">
+        2
+    </div>
+    <div class="kotak">
+        3
+    </div>
+    <div class="kotak">
+        4
+    </div>
+    <div class="kotak">
+        5
+    </div> <br>
+    <div class="kotak">
+        6
+    </div>
+    <div class="kotak">
+        7
+    </div>
+    <div class="kotak">
+        8
+    </div>
+    <div class="kotak">
+        9
+    </div>
+    <div class="kotak">
+        10
+    </div><br>
+    <div class="kotak">
+        11
+    </div>
+    <div class="kotak">
+        12
+    </div>
+    <div class="kotak">
+        13
+    </div>
+    <div class="kotak">
+        14
+    </div>
+    <div class="kotak">
+        15
+    </div>
+    <div class="kotak">
+        16
+    </div>
+    <div class="kotak">
+        17
+    </div>
+    <div class="kotak">
+        18
+    </div>
+    <div class="kotak">
+        19
+    </div>
+    <div class="kotak">
+        20
+    </div>
+    <div class="selesai">
+        <input onclick="konfirm()" type="button" name="selesai" value="Selesai">
+    </div>
+</div>
+<div id="kotaktengah">
+    <div class="box">
+		Biologi MIPA1 <br>
+		Ulangan Harian 2
+    </div>
+    <div class="isi">
+        <label>
+            Soal 2
+        </label> <br><br>
+        Alat indra manusia yang digunakan untuk melihat adalah..... <br> <br>
+        <input type="radio" name="nama_radio" value="isi_radio1"/> A. Hidung <br>
+        <input type="radio" name="nama_radio" value="isi_radio1"/> B. Mulut <br>
+        <input type="radio" name="nama_radio" value="isi_radio1"/> C. Bokong <br>
+        <input type="radio" name="nama_radio" value="isi_radio1"/> D. Mata <br>
+        <input type="radio" name="nama_radio" value="isi_radio1"/> E. Kaki <br>
+
+        <br><br><br><br><br><br>
+
+        <div class="sebelumnya">
+            <a href="soal1.html"> <input type="button" name="sebelumnya" value="Sebelumnya"> </a>
+        </div>
+        <div class="selanjutnya">
+            <input type="button" name="selanjutnya" value="Selanjutnya">
+        </div>         
+    </div>
+</div>
+
+<script>
+	function konfirm() {
+			if(window.confirm("Selesai Mengerjakan Quis??"))
+			{
+			window.location.replace("review.html");
+			}
+			}; 
+</script>
+    
+    <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Oct 25, 2019 15:37:25").getTime();
+            
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+            
+              // Get today's date and time
+              var now = new Date().getTime();
+                
+              // Find the distance between now and the count down date
+              var distance = countDownDate - now;
+                
+              // Time calculations for days, hours, minutes and seconds
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+              // Output the result in an element with id="demo"
+              document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+              + minutes + "m " + seconds + "s ";
+                
+              // If the count down is over, write some text 
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+              }
+            }, 1000);
+        </script>
+    
+
+</body>
+</html>

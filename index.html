@@ -2,7 +2,7 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="project/mlearning.css">
-	<title> Millenial E-Learning/Login </title>
+	<title> SMPN 1 Rambipuji/Login </title>
 </head>
 <body>
 
@@ -16,33 +16,51 @@
 
 
 	<div class="sambut_masuk">
-
-			<p> Selamat Datang Di E-Learning SMPN 1 Rambipuji</p>
-
+		<center>
+			<p> Selamat Datang E-Learning SMPN 1 Rambipuji </p>
+		</center>
 	</div>
 
 	<div class="kotak_login"><br>
-
-			<p align="center" class="TulisanLogin"><b> MASUK </b></p><br><br>
+		<center>
+			<p align="center" class="Tulisan Login"><b><font size="4" color="black"> MASUK </font></b></p><br><br><br>
 			
 			<div class="isian_login">
-				<form>
-					<b>Username</b>
-					<input type="text" name="Username" placeholder="Masukkan Username">
-					<br><br>
-					<b> Password</b>
-					<input type="Password" name="Password" placeholder="Masukkan Password">
-				</form>
+				<center>
+					<form>
+						<b> Username </b> <br>
+						<input type="text" id="Username" placeholder="Username">
+						<br><br>
+						<b> Password </b> <br>
+						<input type="Password" id="Password" placeholder="Password">
+						<br>
+					</form>
+				</center>
 			</div><br>
-
+			<!-- <input onclick="showpassword()" type="checkbox" class="check"> <label> Show Password </label> -->
+			<br>
 			<div class="Masuk">
-				<a href="project/home.html"><input type="button" value="Masuk"></a>
-			</div><br><br>
+				<input onclick="login()" type="button" value="Masuk">
+			</div><br><br><br>
 					
-			<center>
-			<label> Lupa Password? </label><a style="color: navy" class="link" href="https://www.Millenial.elearning.com">Klik Disini </a><br><br>
-		</center>
+
+			<label> Lupa Password? </label><a style="color: navy" class="link" href="project/lupapassword.html">Klik Disini </a><br><br>
+		</center>	
 	</div>
 	
+	<script>
+		function login(){
+			var Username = document.getElementById("Username").value;
+			var Password = document.getElementById("Password").value;
+			if (Username =="inun7" && Password =="12345"){
+				alert("Login Berhasil Bos!");
+				document.location="project/home.html";
+			}else{
+				alert("Username dan Passwordmu tidak terdaftar")
+			}
+		}
+	</script>
+
+
 </body>
 </html>

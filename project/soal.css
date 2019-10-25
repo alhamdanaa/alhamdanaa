@@ -37,10 +37,9 @@
     text-decoration: none; /*hapus underline nav*/
 }
 body{
-	background-image: url(Maudylatar.jpg);
     background-size: 100%;
     font-family: 'Segoe UI';
-/*	background-color: rgba(255,255,255,0.3);*/
+	background-color: rgba(255,255,255,0.3);
 }
 #kotakakun{
     background-color: white;
@@ -96,7 +95,7 @@ body{
     border-radius: 10px;
     width: 165px;
     height: 35px;
-    top: 115px;
+    top: 40px;
     left: 95px;
 }
 .detail{
@@ -106,7 +105,7 @@ body{
 .isi{
     padding: 20px;
 }
-soalno{
+isi label {
     font-size: 17pt;
 }
 img{
@@ -128,3 +127,104 @@ img{
     width: 160px;
     padding: 3px 0 3px 10px;
 }
+
+.selesai input:hover{
+    background-color: #234363;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+}
+
+.sebelumnya input:hover{
+    background-color: #234363;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+}
+
+.selanjutnya input:hover{
+    background-color: #234363;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+}
+
+.kotak:hover{
+    background-color: #234363;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+    
+}
+
+.kotak{
+	width: 50px;
+	height: 40px;
+    display: inline-block;
+    border: 1px solid black;
+    text-align: center;
+    margin-left: 10px;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+.kotakb{
+	width: 50px;
+    height: 40px;
+    background-color: green;
+    display: inline-block;
+    border: 1px solid black;
+    text-align: center;
+    margin-left: 10px;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+.kotaks{
+	width: 50px;
+    height: 40px;
+    background-color: red;
+    display: inline-block;
+    border: 1px solid black;
+    text-align: center;
+    margin-left: 10px;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+.logo{
+    height: 39px;
+    width: 160px;
+    padding: 3px 0 3px 10px;
+}
+
+.kotakb:hover{
+    background-color: #234363;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+}
+
+.kotaks:hover{
+    background-color: #234363;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    float: right;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {background-color: #3dbf8d}
+  
+.navkun:hover .dropdown-content {
+    display: block;
+    position: absolute;
+    right: 0%;
+}
+  
