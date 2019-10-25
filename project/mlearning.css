@@ -176,6 +176,7 @@ body{
     position: absolute;
     right: 0%;
 }
-  
-
-
+.TulisanLogin{
+	font-size: 20pt;
+	color: white;
+}
