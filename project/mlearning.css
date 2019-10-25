@@ -5,7 +5,7 @@
 
 .navbar{
     margin-top: 0px; /*menyesuaikan margin atas*/
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*tipe font*/
+    font-family: fantasy; /*tipe font*/
     width: 100%; /*lebar*/
     font-size: 15px; /*ukuran tulisan*/ 
 }
@@ -18,7 +18,7 @@
 }
 
 .navbar ul li{
-    float: right;
+float: right;
 }
 
 .navbar ul li:hover{
@@ -35,10 +35,6 @@
     padding: 13px;
     color: white;
     text-decoration: none; /*hapus underline nav*/
-}
-
-p{
-	font-size: 25pt;
 }
 
 .logo{
@@ -61,7 +57,7 @@ body{
 	float: left;
 	color: white;
 	object-position: relative;
-	font-size: 40px;
+	font-size: 35px;
 	padding: 130px;
 }
 
@@ -77,25 +73,25 @@ body{
 }
 
 .isian_login input{
-	width: 220px;
+	width: 250px;
 	height: 30px;
-	border-radius: 8px;
+	border-radius: 10px;
 	border-top: white;
 	border-left: white;
-	padding: 5px;
-	
 }
 
 .Masuk input{
 	background-color: #234363;
-	color: white;
-	font-size: 12pt;
-	width: 100%;
-	border: none;
+	color: whitesmoke;
 	border-radius: 10px;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 0px;
+	width: 100px;
+	height: 30px
+}
+
+.Masuk input:hover{
+	background-color: #3dbf8d;
+	border: 2px solid whitesmoke;
+	color: whitesmoke;
 }
 
 .body{
@@ -114,7 +110,7 @@ body{
 
 .form_akun{
 	float: right;
-	background-color: whitesmoke;
+	background-color: white;
 	padding: 35px;
 	padding-top: 5px;
 	width: 970px;
@@ -122,15 +118,15 @@ body{
 }
 
 .form_akun input{
-	border-radius: 10px;
-	border-color: whitesmoke;
+	border-radius: 5px;
+	border-color: white;
 	width: 200px;
 	height: 20px;
 	border-color: black;
 }
 
 .man{
-	background-color: whitesmoke;
+	background-color: white;
     height:530px;
     width: 340px;
 	float: left;
@@ -149,41 +145,4 @@ body{
 	background-color: rgb(82, 163, 190);
 	border-radius: 10px; 
 	width: 100px; height: 30px;
-}
-
-#kotakakun{
-	background-color: white;
-    float: left;
-	position: absolute;
-    height:400px;
-    width: 350px;
-    margin: 10px 10px;
-}
-#kotaktengah{
-	background-color: white;
-    float: center;
-	position: absolute;
-    height:560px;
-    width: 960px;
-	margin: 10px 0px;
-}
-#kelas{
-	background-color: white;
-	float: right;
-	position: absolute;
-    height:450px;
-    width: 350px;
-    margin: 120px 10px;
-}
-.TulisanLogin{
-	font-size: 20pt;
-	color: white;
-}
-form{
-	float: left;
-	color: #234363;
-}
-fieldset{
-	position: relative;
-	margin-left: 50%;
 }
