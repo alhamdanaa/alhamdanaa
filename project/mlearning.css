@@ -15,11 +15,10 @@
     list-style: none;
     display: inline-table;
     width: 100%;
-	padding: 0 0px;
 }
 
 .navbar ul li{
-float: inline-end;
+float: right;
 }
 
 .navbar ul li:hover{
