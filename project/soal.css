@@ -39,7 +39,7 @@
 body{
     background-size: 100%;
     font-family: 'Segoe UI';
-    background-color: silver;
+	background-color: silver;
 }
 #kotakakun{
     background-color: white;
@@ -55,7 +55,7 @@ body{
     margin: 10px 0px;
     float: left;
     text-align: left;
-    border-block: 20%;
+    /* border-block: 20%; */
 }
 .box{
     height:auto;

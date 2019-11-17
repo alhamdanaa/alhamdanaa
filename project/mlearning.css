@@ -51,7 +51,10 @@ body{
 	background-size: 100%;
 	font-family: 'Segoe UI';
 }
-
+.TulisanLogin{
+    	font-size: 20pt;
+    	color: white;
+}
 
 .sambut_masuk{
 	float: left;
@@ -64,7 +67,7 @@ body{
 .kotak_login{
 	float: right;
 	height: 400px;
-	width: 225px;
+	width: 235px;
 	background: #78BDC4;
 	border-radius: 5%;
 	margin: 10px;
@@ -88,9 +91,9 @@ body{
 	width: 100%;
 	border: none;
 	border-radius: 10px;
-    	padding: 10px;
-    	margin-top: 10px;
-    	margin-bottom: 0px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 
 .Masuk input:hover{
@@ -124,10 +127,11 @@ body{
 
 .form_akun input{
 	border-radius: 5px;
-	border-color: white;
 	width: 200px;
 	height: 20px;
-	border-color: black;
+	border-color: rgb(82, 163, 190);
+	border-bottom: rgb(82, 163, 190);
+	border-style: solid;
 }
 
 .man{
@@ -176,7 +180,6 @@ body{
     position: absolute;
     right: 0%;
 }
-.TulisanLogin{
-    font-size: 20pt;
-    color: white;
-}
+  
+
+

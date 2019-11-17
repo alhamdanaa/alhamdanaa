@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="project/mlearning.css">
+	<script type="text/javascript" src="project/jquery.js"></script>
 	<title> SMPN 1 Rambipuji/Login </title>
 </head>
 <body>
@@ -23,7 +24,7 @@
 
 	<div class="kotak_login"><br>
 		<center>
-			<p align="center" class="TulisanLogin"><b> MASUK </b></p><br><br>
+			<p align="center" class="TulisanLogin"><b> MASUK </font></b></p><br><br>
 			
 			<div class="isian_login">
 				<center>
@@ -33,18 +34,17 @@
 						<br><br>
 						<b> Password </b> <br>
 						<input type="Password" id="Password" placeholder="Password">
-						<br>
+						<input type="checkbox" class="form-checkbox">Show Password
 					</form>
 				</center>
-			</div><br>
-			<!-- <input onclick="showpassword()" type="checkbox" class="check"> <label> Show Password </label> -->
+			</div>
 			<br>
 			<div class="Masuk">
 				<input onclick="login()" type="button" value="Masuk">
 			</div><br>
 					
 
-			<label> Lupa Password? </label><a style="color: navy" class="link" href="project/lupapassword.html">Klik Disini </a><br><br>
+			<label> Lupa Password? </label><a style="color: navy" class="link" href="project/lupapassword.html">Klik Disini </a>
 		</center>	
 	</div>
 	
@@ -52,15 +52,26 @@
 		function login(){
 			var Username = document.getElementById("Username").value;
 			var Password = document.getElementById("Password").value;
-			if (Username =="inun7" && Password =="12345"){
+			if (Username !="" && Password !=""){
 				alert("Login Berhasil Bos!");
 				document.location="project/home.html";
 			}else{
-				alert("Username dan Passwordmu tidak terdaftar")
+				alert("Username dan Password Harus Diisi!")
 			}
 		}
 	</script>
 
+	<script type="text/javascript">
+		$(document).ready(function(){		
+			$('.form-checkbox').click(function(){
+				if($(this).is(':checked')){
+					$('#Password').attr('type','text');
+				}else{
+					$('#Password').attr('type','password');
+				}
+			});
+		});
+	</script>
 
 </body>
 </html>
