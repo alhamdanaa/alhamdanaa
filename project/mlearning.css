@@ -173,7 +173,9 @@ body{
     display: block;
 }
   
-.dropdown-content a:hover {background-color: #3dbf8d}
+.dropdown-content a:hover {
+    background-color: #3dbf8d;
+}
   
 .navkun:hover .dropdown-content {
     display: block;
@@ -446,4 +448,34 @@ isi label {
 .isitentang{
     text-align: center;
     padding: 20px;
+}
+
+
+/* Responsiv Login */
+@media screen and (max-width: 600px){
+	body{
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+    
+    .sambut_masuk p{
+        font-size: 5px;
+    }
+
+	.logo{
+		float: left;
+	}
+	
+	.navbar{
+		height: auto;
+		float: none;
+	}
+
+	.sambut_masuk{
+		display: none;
+	}
+
+	.kotak_login{
+		text-align: center;
+	}
 }
