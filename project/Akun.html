@@ -43,29 +43,29 @@
 				<label id="namadepan">Nama Depan </label>
 					&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &ensp; &ensp;
 				<label id="namabelakang">Nama Belakang </label> <br>
-				<input type="text" name="namadepan">
+				<input type="text" name="namadepan" value="Sulton Ainun">
 						&emsp; &emsp; &emsp; &ensp;
-				<input type="text" name="namabelakang"> <br> <br>
+				<input type="text" name="namabelakang" value="Nazib"> <br> <br>
 				<label>Tempat Lahir</label>
 					&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &ensp; &ensp;
 				<label>Tanggal Lahir</label> <br>
-				<input type="text" name="tempatlhr">
+				<input type="text" name="tempatlhr" value="Jember">
 						&emsp; &emsp; &emsp; &ensp;
-				<input type="date" name="tglLahir" value="2019-02-22"><br><br>
+				<input type="date" name="tglLahir" value="1999-02-01"><br><br>
 				<label> Alamat </label>
 					&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &ensp; &ensp;
 				<label> Kode Pos </label> <br>
-				<input type="text" name="alamat">
+				<input type="text" name="alamat" value="Jln.Airlangga Dusun Kaliputih">
 						&emsp; &emsp; &emsp; &ensp;
-				<input type="number" name="kodepos"><br><br>
+				<input type="number" name="kodepos" value="68152"><br><br>
 				<label>Nomor Telepon </label> <br>
-				<input type="number" name="notelepon"><br><br>
+				<input type="number" name="notelepon" value="182410101048"><br><br>
 				<label>Alamat Email </label> <br>
-				<input type="email" name="Email"><br><br>
+				<input type="email" name="Email" value="sultonainunn5@gmail.com"><br><br>
 				<label>Username </label> <br>
-				<input type="text" name="Username" ><br><br>
+				<input type="text" name="Username" value="inun_7"><br><br>
 				<label>Password </label> <br>
-				<input type="Password" name="Password"><br><br>				
+				<input type="Password" name="Password" value="kjahu18361"><br><br>				
 								
 				<div class="simpanakun">
 					<input onclick="simpan_akun()" type="button" name="simpan" value="SIMPAN">
@@ -83,6 +83,54 @@
 			}
 			}; 
 	</script>
+
+
+
+<!-- <script type="text/javascript">
+    $(document).ready(function () {
+        $.getJSON('https://raw.githubusercontent.com/alhamdanaa/alhamdanaa.github.io/master/project/iniJson.json',
+            function (data) {
+                $.each(data, function (n, response) {
+                    $('.form_akun').append(
+                      `			<form>		
+				<label id="namadepan">Nama Depan </label>
+					&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &ensp; &ensp;
+				<label id="namabelakang">Nama Belakang </label> <br>
+				<input type="text" name="namadepan" value="`+response['namaDepan']+`">
+						&emsp; &emsp; &emsp; &ensp;
+				<input type="text" name="namabelakang" value="`+response['namaBelakang']+`"> <br> <br>
+				<label>Tempat Lahir</label>
+					&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &ensp; &ensp;
+				<label>Tanggal Lahir</label> <br>
+				<input type="text" name="tempatlhr" value="`+response['tempatLahir']+`">
+						&emsp; &emsp; &emsp; &ensp;
+				<input type="date" name="tglLahir" value="`+response['tanggalLahir']+`"><br><br>
+				<label> Alamat </label>
+					&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &ensp; &ensp;
+				<label> Kode Pos </label> <br>
+				<input type="text" name="alamat" value="`+response['alamat']+`">
+						&emsp; &emsp; &emsp; &ensp;
+				<input type="number" name="kodepos" value="`+response['kodePos']+`"><br><br>
+				<label>Nomor Telepon </label> <br>
+				<input type="number" name="notelepon" value="`+response['noTelepon']+`"><br><br>
+				<label>Alamat Email </label> <br>
+				<input type="email" name="Email" value="`+response['alamatEmail']+`"><br><br>
+				<label>Username </label> <br>
+				<input type="text" name="Username" value="`+response['inun']+`"><br><br>
+				<label>Password </label> <br>
+				<input type="Password" name="Password" value="`+response['password']+`"><br><br>				
+								
+				<div class="simpanakun">
+					<input onclick="simpan_akun()" type="button" name="simpan" value="SIMPAN">
+				</div>		
+				
+		</form>
+`
+                    );
+                })
+            });
+    })
+    </script> -->
 
 </body>
 </html>
