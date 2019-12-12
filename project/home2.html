@@ -3,6 +3,7 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="mlearning.css">
 	<title> E-Learning SMPN 1 Rambipuji </title>
+	<script src="jquery.js"></script>
 </head>
 <body>
 
@@ -46,7 +47,7 @@
     Soal Yang Diujikan Semua Mulai BAB 1
     </div>
     <div class="mulai">
-            <input onclick="konfirm()" type="button" name="Mulai" value="Mulai Mengerjakan">
+            <input class="btnmulai" type="button" name="Mulai" value="Mulai Mengerjakan">
         </div>
 </div>
 
@@ -61,15 +62,60 @@
 	</div>
 </div>
 
-<script>
+<!-- <script>
 	function konfirm() {
 			if(window.confirm("Mulai Kerjakan Quis??"))
 			{
 			window.location.replace("soal.html");
 			}
 			}; 
-</script>
+</script> -->
 
+<div id="myModal" class="modal modal-zoom">
+	<center>
+		<div class="modal-content">
+			<center>
+				<p>Mulai Kerjakan Quis?</p><br>
+				<button id="modal-btn-yes">
+					Ya
+				</button>
+				<button id="modal-btn-no">
+					Tidak
+				</button>
+			</center>
+		</div>	
+	</center>
+</div>
+
+
+<script text="text/javascript">
+	$(".mulai").on('click', function () {
+		var modal = document.getElementById("myModal");
+		modal.style.display = "block";
+	}) 
+	$("#modal-btn-no").on('click', function () {
+		var modal = document.getElementById("myModal");
+		modal.style.display = "none";
+	})
+	$("#modal-btn-yes").on('click', function () {
+		window.location.href = 'soal.html';
+		return false;
+		modal.style.display = "none";
+	})
+	$(document).keyup(function (e) {
+		if (e.keyCode === 13) {
+			if (modal.style.display == "block") {
+				window.location.href = 'soal.html';
+				return false;
+				modal.style.display = "none";
+			}
+		}     // enter
+		if (e.keyCode === 27) {
+			var modal = document.getElementById("myModal");
+			modal.style.display = "none";
+		}
+	});
+</script>
 
 </body>
 </html>
